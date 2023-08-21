@@ -923,7 +923,7 @@ Introduction Section CSS
 
 .CCcard {
   
-  background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image.webp") no-repeat;
+  background: url("/images/ClassyCloset/image.webp") no-repeat;
   border-radius: 25px;
   background-size: cover;
   display: inline-block;
@@ -949,62 +949,62 @@ Introduction Section CSS
 
 @keyframes CCimageChange {
       11%{
-  background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (1).webp") no-repeat;
+  background: url("/images/ClassyCloset/image (1).webp") no-repeat;
   border-radius: 25px;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
           }
       22%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (2).webp") no-repeat;
+          background: url("/images/ClassyCloset/image (2).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       33%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (3).webp") no-repeat;
+          background: url("/images/ClassyCloset/image (3).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       44%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (4).webp") no-repeat;
+          background: url("/images/ClassyCloset/image (4).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       55%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (5).webp") no-repeat;
+          background: url("/images/ClassyCloset/image (5).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
   66%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (6).webp") no-repeat;
+          background: url("/images/ClassyCloset/image (6).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
   77%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (7).webp") no-repeat;
+          background: url("/images/ClassyCloset/image (7).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
-  88%{    background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image (8).webp") no-repeat;
+  88%{    background: url("/images/ClassyCloset/image (8).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
   100%{
-          background: url("/samuel-kinaitis.github.io/core/images/ClassyCloset/image.webp") no-repeat;
+          background: url("/images/ClassyCloset/image.webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
@@ -1015,7 +1015,7 @@ Introduction Section CSS
 /*Empolyee Record Database*/
 
 .ERDcard {
-  background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage.webp") no-repeat;
+  background: url("/images/ERD/ERDimage.webp") no-repeat;
   border-radius: 25px;
   background-size: cover;
     display: inline-block;
@@ -1039,42 +1039,42 @@ Introduction Section CSS
 
 @keyframes ERDimageChange {
       17%{
-  background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage\(1\).webp") no-repeat;
+  background: url("/images/ERD/ERDimage\(1\).webp") no-repeat;
   border-radius: 25px;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
           }
       34%{
-          background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage\(2\).webp") no-repeat;
+          background: url("/images/ERD/ERDimage\(2\).webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       51%{
-        background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage\(3\).webp") no-repeat;
+        background: url("/images/ERD/ERDimage\(3\).webp") no-repeat;
         border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       68%{
-        background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage\(4\).webp") no-repeat;
+        background: url("/images/ERD/ERDimage\(4\).webp") no-repeat;
         border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       85%{
-        background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage\(5\).webp") no-repeat;
+        background: url("/images/ERD/ERDimage\(5\).webp") no-repeat;
         border-radius: 25px;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
         100%{
-          background: url("/samuel-kinaitis.github.io/core/images/ERD/ERDimage.webp") no-repeat;
+          background: url("/images/ERD/ERDimage.webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
@@ -1086,7 +1086,7 @@ Introduction Section CSS
 
 .MAIDcard {
   
-  background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage.webp") no-repeat;
+  background: url("/images/MAID/MAIDimage.webp") no-repeat;
   border-radius: 25px;
   background-size: cover;
   display: inline-block;
@@ -1111,49 +1111,49 @@ Introduction Section CSS
 
 @keyframes MAIDimageChange {
   14%{
-    background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage\(1\).webp") no-repeat;
+    background: url("/images/MAID/MAIDimage\(1\).webp") no-repeat;
     border-radius: 25px;
     background-size: cover;
     display: inline-block;
     background-repeat: no-repeat;
             }
         28%{
-            background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage\(2\).webp") no-repeat;
+            background: url("/images/MAID/MAIDimage\(2\).webp") no-repeat;
             border-radius: 25px;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
         42%{
-          background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage\(3\).webp") no-repeat;
+          background: url("/images/MAID/MAIDimage\(3\).webp") no-repeat;
           border-radius: 25px;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
         52%{
-          background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage\(4\).webp") no-repeat;
+          background: url("/images/MAID/MAIDimage\(4\).webp") no-repeat;
           border-radius: 25px;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
         70%{
-          background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage\(5\).webp") no-repeat;
+          background: url("/images/MAID/MAIDimage\(5\).webp") no-repeat;
           border-radius: 25px;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
           84%{
-            background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage\(6\).webp") no-repeat;
+            background: url("/images/MAID/MAIDimage\(6\).webp") no-repeat;
             border-radius: 25px;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
           100%{
-          background: url("/samuel-kinaitis.github.io/core/images/MAID/MAIDimage.webp") no-repeat;
+          background: url("/images/MAID/MAIDimage.webp") no-repeat;
           border-radius: 25px;
           background-size: cover;
           display: inline-block;
@@ -1176,7 +1176,7 @@ Introduction Section CSS
   width: 50px;
   transition: all 0.35s;
 
-  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows98.webp") no-repeat;
+  background: url("/images/TechStack/Windows/Windows98.webp") no-repeat;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
@@ -1195,25 +1195,25 @@ Introduction Section CSS
 
 @keyframes WindowsimageChange {
       25%{
-  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows10-11.webp") no-repeat;
+  background: url("/images/TechStack/Windows/Windows10-11.webp") no-repeat;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
           }
       50%{
-          background: url("/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows8-10-S.webp") no-repeat;
+          background: url("/images/TechStack/Windows/Windows8-10-S.webp") no-repeat;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       75%{
-          background: url("/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows7-XP.webp") no-repeat;
+          background: url("/images/TechStack/Windows/Windows7-XP.webp") no-repeat;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
       100%{
-          background: url("/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows98.webp") no-repeat;
+          background: url("/images/TechStack/Windows/Windows98.webp") no-repeat;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
@@ -1235,7 +1235,7 @@ Introduction Section CSS
   width: 50px;
   transition: all 0.35s;
 
-  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/MS365.webp") no-repeat;
+  background: url("/images/TechStack/Microsoft365/MS365.webp") no-repeat;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
@@ -1252,61 +1252,61 @@ Introduction Section CSS
 
 @keyframes MicrosoftimageChange {
 9%{
-background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Office.webp") no-repeat;
+background: url("/images/TechStack/Microsoft365/Office.webp") no-repeat;
 background-size: cover;
 display: inline-block;
 background-repeat: no-repeat;
 }
 18%{
-  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Word.webp") no-repeat;
+  background: url("/images/TechStack/Microsoft365/Word.webp") no-repeat;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
   }
   27%{
-    background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Excel.webp") no-repeat;
+    background: url("/images/TechStack/Microsoft365/Excel.webp") no-repeat;
     background-size: cover;
     display: inline-block;
     background-repeat: no-repeat;
     }
     36%{
-      background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Powerpoint.webp") no-repeat;
+      background: url("/images/TechStack/Microsoft365/Powerpoint.webp") no-repeat;
       background-size: cover;
       display: inline-block;
       background-repeat: no-repeat;
       }
       45%{
-        background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Outlook.webp") no-repeat;
+        background: url("/images/TechStack/Microsoft365/Outlook.webp") no-repeat;
         background-size: cover;
         display: inline-block;
         background-repeat: no-repeat;
         }
         54%{
-          background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Onedrive.webp") no-repeat;
+          background: url("/images/TechStack/Microsoft365/Onedrive.webp") no-repeat;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
           63%{
-            background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Sharepoint.webp") no-repeat;
+            background: url("/images/TechStack/Microsoft365/Sharepoint.webp") no-repeat;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
             72%{
-              background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Planner.webp") no-repeat;
+              background: url("/images/TechStack/Microsoft365/Planner.webp") no-repeat;
               background-size: cover;
               display: inline-block;
               background-repeat: no-repeat;
               }
               81%{
-                background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Visio.webp") no-repeat;
+                background: url("/images/TechStack/Microsoft365/Visio.webp") no-repeat;
                 background-size: cover;
                 display: inline-block;
                 background-repeat: no-repeat;
                 }
                 90%{
-                  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Access.webp") no-repeat;
+                  background: url("/images/TechStack/Microsoft365/Access.webp") no-repeat;
                   background-size: cover;
                   display: inline-block;
                   background-repeat: no-repeat;
@@ -1314,7 +1314,7 @@ background-repeat: no-repeat;
           
 
       100%{
-          background: url("/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/MS365.webp") no-repeat;
+          background: url("/images/TechStack/Microsoft365/MS365.webp") no-repeat;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
@@ -1336,7 +1336,7 @@ background-repeat: no-repeat;
   width: 50px;
   transition: all 0.35s;
 
-  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Google.webp") no-repeat;
+  background: url("/images/TechStack/Google/Google.webp") no-repeat;
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
@@ -1355,61 +1355,61 @@ background-repeat: no-repeat;
 
 @keyframes GoogleimageChange {
   9%{
-    background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Drive.webp") no-repeat;
+    background: url("/images/TechStack/Google/Drive.webp") no-repeat;
     background-size: cover;
     display: inline-block;
     background-repeat: no-repeat;
     }
     18%{
-      background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Docs.webp") no-repeat;
+      background: url("/images/TechStack/Google/Docs.webp") no-repeat;
       background-size: cover;
       display: inline-block;
       background-repeat: no-repeat;
       }
       27%{
-        background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Sheets.webp") no-repeat;
+        background: url("/images/TechStack/Google/Sheets.webp") no-repeat;
         background-size: cover;
         display: inline-block;
         background-repeat: no-repeat;
         }
         36%{
-          background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Slides.webp") no-repeat;
+          background: url("/images/TechStack/Google/Slides.webp") no-repeat;
           background-size: cover;
           display: inline-block;
           background-repeat: no-repeat;
           }
           45%{
-            background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Forms.webp") no-repeat;
+            background: url("/images/TechStack/Google/Forms.webp") no-repeat;
             background-size: cover;
             display: inline-block;
             background-repeat: no-repeat;
             }
             54%{
-              background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Gmail.webp") no-repeat;
+              background: url("/images/TechStack/Google/Gmail.webp") no-repeat;
               background-size: cover;
               display: inline-block;
               background-repeat: no-repeat;
               }
               63%{
-                background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Meet.webp") no-repeat;
+                background: url("/images/TechStack/Google/Meet.webp") no-repeat;
                 background-size: cover;
                 display: inline-block;
                 background-repeat: no-repeat;
                 }
                 72%{
-                  background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/WebStore.webp") no-repeat;
+                  background: url("/images/TechStack/Google/WebStore.webp") no-repeat;
                   background-size: cover;
                   display: inline-block;
                   background-repeat: no-repeat;
                   }
                   81%{
-                    background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/One.webp") no-repeat;
+                    background: url("/images/TechStack/Google/One.webp") no-repeat;
                     background-size: cover;
                     display: inline-block;
                     background-repeat: no-repeat;
                     }
                     90%{
-                      background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Play.webp") no-repeat;
+                      background: url("/images/TechStack/Google/Play.webp") no-repeat;
                       background-size: cover;
                       display: inline-block;
                       background-repeat: no-repeat;
@@ -1417,7 +1417,7 @@ background-repeat: no-repeat;
               
     
           100%{
-            background: url("/samuel-kinaitis.github.io/core/images/TechStack/Google/Google.webp") no-repeat;
+            background: url("/images/TechStack/Google/Google.webp") no-repeat;
             background-size: cover;
               display: inline-block;
               background-repeat: no-repeat;

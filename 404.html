@@ -22,7 +22,7 @@
         <h2>Oops! Page Not Found</h2>
         <p>I am sorry, but the page you are looking for does not exist or has been moved.</p>
         <p id="time">Automatic redirect broken, please use manual redirect below, sorry.</p>
-        <p id="manual">For manual redirect, <a href="/samuel-kinaitis.github.io/">clicking here</a></p>
+        <p id="manual">For manual redirect, <a href="/">clicking here</a></p>
         <p> If you believe there is a problem with the website or you need further assistance, please feel free to contact me at <a href="mailto:samuel.kinaitis@gmail.com">samuel.kinaitis@gmail.com</a>.</p>
         <p>Thank you for visiting my website!</p>
     </div>
@@ -38,7 +38,7 @@
         if (timeTillRedirect > -1) {
             UpdateTimerandRedirect();
         } else {
-            window.location.replace("/samuel-kinaitis.github.io/");
+            window.location.replace("/");
             document.getElementById("time").innerHTML = `Automatic redirect broken, please use manual redirect below, sorry.`;
         }
     }, 1000)
