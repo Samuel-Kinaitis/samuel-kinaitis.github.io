@@ -2,10 +2,590 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Personal website of Samuel Kinaitis">
+    <title>Samuel Kinaitis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="Em8pXrSWKLO8pjouSczAKbZ6m8Ji0wlVBsGd92n9XeE" />
+    <!--Me-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/20230506_164429.webp">
+    
 </head>
 <body>
-    <p>test</p>
+  <header id="header">  
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#Home" class="navbar__logo">Samuel Kinaitis</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar__toggle" id="mode-menu">
+          <div class="mode-menu-2nd"><span class="mode-menu-3rd"></span></div>
+          <span class="tooltip-text" id="mode-menu-tip">Theme Toggle</span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#Home" class="navbar__links" id="HomeLink">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#About" class="navbar__links" id="AboutLink">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Portfolio" class="navbar__links" id="PortfolioLink">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Contact" class="navbar__links" id="ContactLink">Contact</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Networks" class="navbar__links" id="NetworkLink">Networks</a>
+          </li>
+        </ul> 
+      </div>
+  </header>
+
+<main>
+    <!-- Introduction Section -->
+    <div class="main" id="Home">
+      <div class="main__container">
+        <div class="main__content">
+          <h1 id="Hometag">Samuel</h1>
+          <h2>Kinaitis</h2>
+          <p>An Aspiring Computer Information Systems Professional.</p>
+          <a href="#Contact"><button class="secondary__btn" id="MainContactBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/mailLogo.webp" alt="Github Logo"><h3>Contact Me</h3></button></a> 
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="/samuel-kinaitis.github.io/core/images/20230506_164429.webp"  alt="That's Me"/>
+        </div>
+      </div>
+
+      
+
+      <div class="content--wrapper" id="about-wrap">
+        <h2 class="subjectHeader" id="About">About Me</h2>
+        <div class="about-wrap">
+          <p>
+            Hello! I'm thrilled to have you visit my website.
+            My name is Samuel Kinaitis, and I am a student pursuing an Associate of Applied Science in Computer Information Systems at Davenport University.
+            Technology has always been my passion, and I am constantly driven by the desire to explore its vast possibilities and create innovative solutions.
+            </p>
+
+            <p>
+              Engaged in immersive projects, I have cultivated extensive hands-on expertise in conceptualizing and constructing dynamic programs, websites, and applications.
+              My comprehensive grasp of the business systems cycle and system development life cycle equips me with the ability to seamlessly connect technology with strategic business goals, thereby ensuring that solutions not only showcase innovation but also harmonize seamlessly with organizational imperatives. 
+              This proficiency empowers the development process to optimize workflows, foster efficient collaboration, and harness the full scope of technological capabilities.
+            </p>
+
+            <p>
+              Thank you for taking the time to visit, and I look forward to sharing my journey with you.
+            </p>
+        </div>
+
+        <!-- Skills Section        -->
+        <h3 class="subjectSubheader" id="About-Skills">Tech Stack</h3>
+
+        <div class="Tech__Stack--container">
+          <div class="Tech__Stack--wrap">
+            
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/VS2022.webp" alt="Video Studio 2022">
+            <span class="tooltip-text">Video Studio 2022</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/AndriodStudio.webp" alt="Android Studio">
+            <span class="tooltip-text">Android Studio</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/VSC.webp" alt="Visual Studio Code">
+            <span class="tooltip-text">Visual Studio Code</span>
+          </div>
+        </div>
+
+        <div class="Tech__Stack--container">
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/CSharp.webp" alt="CSharp">
+            <span class="tooltip-text">C#</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/Java.webp" alt="Java">
+            <span class="tooltip-text">Java</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/JavaScript.webp" alt="JavaScript">
+            <span class="tooltip-text">JavaScript</span>
+          </div>
+
+        </div>
+        
+        <div class="Tech__Stack--container">
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/XML.webp" alt="XML">
+            <span class="tooltip-text">XML</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/CSS.webp" alt="CSS">
+            <span class="tooltip-text">CSS</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/HTML.webp" alt="HTML">
+            <span class="tooltip-text">HTML</span>
+          </div>
+        </div>
+
+        <h3 class="subjectSubheader" id="Ecosystems">Ecosystems</h3>
+        <p class="LegalNotice">Notice: These logos are intended as compatibility references and do not constitute endorsements.</p>
+        <div class="Tech__Stack--container">
+          <div class="Tech__Stack--wrap">
+            <div class="Googlecard">
+              <img class="Tech__Stack--logo" id="GooglecardImg" src="/samuel-kinaitis.github.io/core/images/TechStack/Google/Google.webp" alt="Google">
+            </div>
+            <span class="tooltip-text">Google</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <div class="Microsoftcard">
+              <img class="Tech__Stack--logo" id="MicrosoftcardImg" src="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/MS365.webp" alt="Microsoft 365">
+            </div>
+            <span class="tooltip-text">Microsoft 365</span>
+          </div>
+          
+
+        </div>
+
+        <div class="Tech__Stack--container"> 
+          <div class="Tech__Stack--wrap"><!--Windows-->
+            <div class="Windowscard">
+              <img class="Tech__Stack--logo" id="WindowscardImg" src="/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows10-11.webp" alt="Windows">
+            </div>
+            <span class="tooltip-text">Windows</span>
+          </div>
+        </div>
+
+        <div class="Tech__Stack--container"> 
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/Andriod.webp" alt="Android">
+            <span class="tooltip-text">Android</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/Linux.webp" alt="Linux">
+            <span class="tooltip-text">Linux</span>
+          </div>
+          <div class="Tech__Stack--wrap">
+            <img class="Tech__Stack--logo" src="/samuel-kinaitis.github.io/core/images/TechStack/Apple.webp" alt="Apple">
+            <span class="tooltip-text">Apple</span>
+          </div>
+        </div>
+        
+
+
+
+
+        <div id="about--end"></div>
+      </div>
+
+      <div class="content--wrapper">
+        <h2 class="subjectHeader" id="Portfolio">Portfolio</h2>
+                  
+        <!--Classy Closet-->
+        <div>
+            <div>
+              <h3 class="subjectSubheader" id="Portfolio-ClassyCloset">Classy Closet</h3>
+
+              <div class="ImageCenterItem">
+                <div class="CCcard">
+                  <img id="CCcardImg" src="/samuel-kinaitis.github.io/core/images/ClassyCloset/image.webp" alt="Classy Closet's Homepage">
+                </div>
+              </div>
+              
+
+              <div class="PortfolioInfo--wrap">
+                <div class="portfolioBtnsMobile">
+                  <div class="portfolioBtnsMobile--container">
+                    <a href="/Classy-Closet/index.html" target="_blank"><button class="middle__btn" id="ClassyClosetLiveMobileBtn"><div class="liveLogo"></div><h3>Live Demo</h3></button></a>
+                    <div><button onclick="playvideo('ClassyClosetVideoMobileBtn')" class="middle__btn" id="ClassyClosetVideoMobileBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Github Logo"><h3 id="ClassyClosetVideoMobileText">Video Demo</h3></button></div>  
+                    <a href="https://github.com/Samuel-Kinaitis/Classy-Closet" target="_blank"><button  class="middle__btn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo"><h3>Repository</h3></button></a>
+                  </div>
+                                   </div>
+                <div class="PortfolioDisc">
+                  <ul>
+                    <li>Multi Webpage eCommerce mock-up with the following features
+                      <br>
+                      <ul>
+                        <li>A responsive navigation menu</li>
+                        <li>A home page with category selections, featured products, and treading items.</li>
+                        <li>A catalog that is both categorically sortable by item type and searchable by name keywords.</li>
+                        <li>A product page to view selected items and select options such as the size or amount</li>
+                        <li>A dynamic shopping cart that allows for items to be removed with checkout total</li>
+                        <li>A dynamic database that can be modified to manage, remove, and input new items into the site’s catalog.</li>
+                        <li>Employee section to manage database</li>
+                        <li>Locally stores the user's cart to remember upon a revisit.</li>
+                        <li>Supporting pages such as contact, TOS, careers, and support</li>
+                      </ul>
+                    </li>
+                    <li>Designed using Visual Studio Code
+                      <br>
+                      <ul>
+                        <li>Programing Language: JavaScript</li>
+                        <li>Markup:
+                          <br>
+                          <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                          </ul>
+                        </li>
+                        <li>Storage - Cookies (First-Party) Local Storage and IndexedDB.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="portfolioBtnsPC">
+                  <a href="/Classy-Closet/index.html" target="_blank"><button class="main__btn" id="ClassyClosetLiveBtn"><div class="liveLogo"></div><h3>Live Demo</h3></button></a>
+                  <div><button onclick="playvideo('ClassyClosetVideoBtn')" class="middle__btn" id="ClassyClosetVideoBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Github Logo"><h3 id="ClassyClosetVideoText">Video Demo</h3></button></div>
+                  <a href="https://github.com/Samuel-Kinaitis/Classy-Closet" target="_blank"><button  class="secondary__btn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo"><h3>Repository</h3></button></a>
+                </div>
+              </div>
+              <div id="Portfolio-ClassyCloset--end"></div>
+            </div>
+            <!--Mobile Application Item Database-->
+
+            <div>
+              <div>
+                <h3 class="subjectSubheader" id="Portfolio-MAID">Mobile Application Item Database</h3>
+  
+                <div class="ImageCenterItem">
+                  <div class="MAIDcard">
+                    <img id="MAIDcardImg" src="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage.webp" alt="Mobile Application Item Database">
+                  </div>
+                </div>
+                
+                
+                <div class="PortfolioInfo--wrap">
+                  <div class="portfolioBtnsMobile">
+                    <div class="portfolioBtnsMobile--container">
+                      <div><button onclick="playvideo('MAIDVideoMobileBtn')" class="middle__btn" id="MAIDVideoMobileBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Github Logo"><h3 id="MAIDVideoMobileText">Video Demo</h3></button></div>
+                    <a href="https://github.com/Samuel-Kinaitis/Mobile-Appilcation-Item-Database" target="_blank"><button class="middle__btn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo"><h3>Repository</h3></button></a>  
+                    </div>
+                    </div>
+                  <div class="PortfolioDisc">
+                    <ul>
+                      <li>Mobile Application for managing a database of products with the following components:
+                        <br>
+                        <ul>
+                          <li>Database that stores Product: ID, Name, Expiration Date, Manufacture, Quantity, Sale Price, Cost, Description</li>
+                          <li>Display Menu that displays all products from the database in a table</li>
+                          <li>Modification Menu that allows for items to be searched for and changed</li>
+                          <li>Deletion Menu that allows for items to be searched and removed</li>
+                          <li>Add Menu to add new products to the database</li>
+                        </ul>
+                      </li>
+                      <li>Designed using Android Studio
+                        <br>
+                        <ul>
+                          <li>Programing Language: Java</li> 
+                          <li>Markup: XML</li>
+                          <li>Storage: SQLite</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="portfolioBtnsPC">
+                    <div><button onclick="playvideo('MAIDVideoBtn')" class="main__btn" id="MAIDVideoBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Github Logo"><h3 id="MAIDVideoText">Video Demo</h3></button></div>
+                    <a href="https://github.com/Samuel-Kinaitis/Mobile-Appilcation-Item-Database" target="_blank"><button class="secondary__btn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo"><h3>Repository</h3></button></a>  
+                  </div>
+                </div>
+            </div>
+            <div id="Portfolio-MAID--end"></div>
+        </div>
+            <!--Employee Record Database--> 
+            <div>
+              <div>
+                <h3 class="subjectSubheader" id="Portfolio-ERD">Employee Record Database</h3>
+                
+                <div class="ImageCenterItem">
+                  <div class="ERDcard">
+                    <img id="ERDcardImg" src="/samuel-kinaitis.github.io/core/images/ERD/ERDimage.webp" alt="Employee Record Database Display">
+                  </div>
+                </div>
+                
+  
+                <div class="PortfolioInfo--wrap">
+                  <div class="portfolioBtnsMobile">
+                    <div class="portfolioBtnsMobile--container">
+                      <div><button onclick="playvideo('ERDVideoMobileBtn')" class="middle__btn" id="ERDVideoMobileBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Github Logo"><h3 id="ERDVideoMobileText">Video Demo</h3></button></div>
+                    <a href="https://github.com/Samuel-Kinaitis/Csharp-dynamic-sheet-database" target="_blank"><button class="middle__btn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo"><h3>Repository</h3></button></a>
+                    </div>
+                    </div>
+                  <div class="PortfolioDisc">
+                    <ul>
+                      <li>Desktop program for managing employee record database with the ability to:
+                        <br>
+                        <ul>
+                          <li>Display in spreadsheet style</li>
+                          <li>Organize columns from least to greatest or vice versa</li>
+                          <li>Add new items</li>
+                          <li>Edit pre-existing items</li>
+                          <li>Save changes to database</li>
+                          <li>Delete selected items</li>
+                          <li>Undo previous deleted actions</li>
+                          <li>Remove all entries </li>
+                          <li>Search database with keyword</li>
+                        </ul>
+                      </li>
+                      <li>Designed using Visual Studio 2022 and MS Access
+                        <br>
+                        <ul>
+                          <li>Programing Language: C#</li>
+                          <li>Storage:Microsoft Access</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="portfolioBtnsPC">
+                    <div><button onclick="playvideo('ERDVideoBtn')" class="main__btn" id="ERDVideoBtn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Github Logo"><h3 id="ERDVideoText">Video Demo</h3></button></div>
+                    <a href="https://github.com/Samuel-Kinaitis/Csharp-dynamic-sheet-database" target="_blank"><button class="secondary__btn"><img class="button__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo"><h3>Repository</h3></button></a>
+                  </div>
+                </div>
+                <div id="Portfolio-ERD--end"></div>
+            </div>
+        <div id="portfolio--end"></div>
+      </div>
+
+
+      <div class="info--wrapper">
+        <h2 class="subjectHeader" id="Contact">Contact Information</h2>
+
+        <div class="Contact__Info--wrap">
+
+          <div class="Contact__Disc">
+            <h3 class="subjectSubheader">Reach Out and Get in Touch!</h3>
+
+            <p>Curious to know more or have something in mind?</p>
+
+            <p>Please don't hesitate to contact me via email with any inquiries.</p>
+
+            <p>Whether it's about my projects, potential collaborations, or want to connect? I'm excited to hear from you.</p>
+
+            <p>Send me a message and explore the possibilities!</p>
+          </div>
+
+          <div class="Contact__Info" id="Email">
+            <img src="/samuel-kinaitis.github.io/core/images/Logos/mailLogo.webp" alt="Email Logo">
+            <div>
+              <h3>Email:</h3>
+              <a href="mailto:samuel.kinaitis@gmail.com">samuel.kinaitis@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="info--wrapper">
+        <h2 class="subjectHeader" id="Networks">Networks</h2>
+
+        <div class="Contact__Info--wrap">
+          <div class="Contact__Info" id="LinkedIn">
+            <img src="/samuel-kinaitis.github.io/core/images/Logos/linkedinLogo.webp" alt="Linkedin Logo">
+            <div>
+              <h3>LinkedIn:</h3>
+              <a href="https://www.linkedin.com/in/samuel-kinaitis/" target="_blank">linkedin.com/in/samuel-kinaitis/</a>
+            </div>
+          </div>
+
+          <div class="Contact__Info" id="LinkedIn">
+            <img src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo">
+            <div>
+              <h3>Github:</h3>
+              <a href="https://github.com/Samuel-Kinaitis" target="_blank">github.com/Samuel-Kinaitis</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ContactEnd__Info--wrap">
+          <div class="Contact__Info" id="LinkedIn">
+            <img src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Youtube Logo">
+            <div>
+              <h3>Youtube:</h3>
+              <a href="https://www.youtube.com/@Samuel-Kinaitis" target="_blank">youtube.com/@Samuel-Kinaitis</a>
+              <p class="Notice">Notice: Content Currently Unavailable</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    
+</main>
+
+<footer id="footer">
+  <div class="footer__container">
+    
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Additional Information</h2>
+              <a href="https://docs.github.com/en/site-policy" target="_blank">Privacy and Security</a>
+              <a href="https://github.com/Samuel-Kinaitis/samuel-kinaitis.github.io" target="_blank">Site Repository</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="social__iconsMobile">
+          <a
+            class="social__icon--link"
+            href="https://github.com/Samuel-Kinaitis"
+            target="_blank"
+            aria-label="Github"
+          >
+            <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo">
+          </a>
+  
+          <a
+          class="social__icon--link"
+          href="mailto:samuel.kinaitis@gmail.com"
+          target="_blank"
+          aria-label="Email"
+        >
+        <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/mailLogo.webp" alt="Email Logo">
+        </a>
+
+        <a
+            class="social__icon--link"
+            href="https://www.youtube.com/@Samuel-Kinaitis"
+            target="_blank"
+            aria-label="Youtube"
+          >
+          <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Youtube Logo">
+          </a>
+
+          <a
+            class="social__icon--link"
+            href="https://www.linkedin.com/in/samuel-kinaitis/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+          <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/linkedinLogo.webp" alt="Linkedin Logo">
+          </a>
+  
+        </div>
+        <div class="footer__logo">
+          <a href="#Home" id="footer__logo" class="navbar__logo"></i>Samuel Kinaitis</a>
+        </div>
+        <div class="website__rights--wrap">
+          <p class="website__rights">Designed and owned by Samuel Kinaitis</p>
+          <p id="website__copyright" class="website__rights">Copyright &copy; 2023. All rights are reserved</p>
+      </div>
+        <div class="social__iconsPC">
+          <a
+            class="social__icon--link"
+            href="https://github.com/Samuel-Kinaitis"
+            target="_blank"
+            aria-label="Github"
+          >
+            <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/githubLogo.webp" alt="Github Logo">
+          </a>
+  
+          <a
+          class="social__icon--link"
+          href="mailto:samuel.kinaitis@gmail.com"
+          target="_blank"
+          aria-label="Email"
+        >
+        <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/mailLogo.webp" alt="Email Logo">
+        </a>
+
+        <a
+            class="social__icon--link"
+            href="https://www.youtube.com/@Samuel-Kinaitis"
+            target="_blank"
+            aria-label="Youtube"
+          >
+          <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/youtubeLogo.webp" alt="Youtube Logo">
+          </a>
+
+          <a
+            class="social__icon--link"
+            href="https://www.linkedin.com/in/samuel-kinaitis/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+          <img class="social__icon--logo" src="/samuel-kinaitis.github.io/core/images/Logos/linkedinLogo.webp" alt="Linkedin Logo">
+          </a>
+  
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+
+<script src="/samuel-kinaitis.github.io/core/app.js"></script>
 </body>
+
+  <!--Preload to remove css animations flashing-->
+  <!--Preload, this will through warnings, but it stops images from flashing through the first animation loop-->
+    <!--Classy Closet-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (1).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (2).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (3).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (4).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (5).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (6).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (7).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ClassyCloset/image (8).webp">
+    <!--Employee Record Database-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ERD/ERDimage.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ERD/ERDimage(1).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ERD/ERDimage(2).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ERD/ERDimage(3).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ERD/ERDimage(4).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/ERD/ERDimage(5).webp">
+    <!--Mobile Application Item Database-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage(1).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage(2).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage(3).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage(4).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage(5).webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/MAID/MAIDimage(6).webp">
+    <!--Ecosystems-->
+    <!--Google-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Docs.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Drive.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Forms.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Gmail.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Google.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Meet.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/One.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Play.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Sheets.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/Slides.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Google/WebStore.webp">
+    <!--Microsoft 365-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Access.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Excel.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/MS365.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Office.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Onedrive.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Outlook.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Planner.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Powerpoint.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Sharepoint.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Visio.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Microsoft365/Word.webp">
+    <!--Windows-->
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows7-XP.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows8-10-S.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows10-11.webp">
+    <link rel="preload"as="image" href="/samuel-kinaitis.github.io/core/images/TechStack/Windows/Windows98.webp">
+
 </html>
