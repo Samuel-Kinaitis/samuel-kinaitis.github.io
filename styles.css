@@ -145,7 +145,7 @@ overflow:auto;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    
+    font-weight: 500;
 }
 
 
@@ -494,7 +494,7 @@ overflow:auto;
   }
   
   .social__media {
-    max-width: 1000px;
+    max-width: 1500px;
     width: 100%;
   }
   
@@ -503,7 +503,7 @@ overflow:auto;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
   }
   
