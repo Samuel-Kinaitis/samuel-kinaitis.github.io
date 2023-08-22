@@ -14,8 +14,6 @@
   --background3: #262626;
   --white: #ffffff; 
 
-  --logoColor: 0%;
-
   --gray: #bfbfbf;
   --gray2: #fafafa;
 
@@ -266,6 +264,7 @@ overflow:auto;
   visibility: visible;
   top: 250%;
   left: 20%;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 960px){
@@ -298,7 +297,7 @@ overflow:auto;
         top: 100%;
         opacity: 1;
         transition: all 0.5 ease;
-        z-index: 99;
+        z-index: 98;
         height: fit-content;
         font-size: 1.6rem;
     }
@@ -364,8 +363,10 @@ overflow:auto;
       visibility: hidden;
 
 
+      right: -50px;
+
       position: absolute;
-      top: -1000px;
+
       transition: all 0.5s ease;
       z-index: -1;
     }
@@ -373,7 +374,7 @@ overflow:auto;
     #mode-menu.menu-open{
       visibility: visible;
       top: 20%;
-      right: 75px;
+      right: 25px;
       transform: translate(5%, 20%);
     }
 
@@ -385,11 +386,6 @@ overflow:auto;
       visibility: hidden;
     }
 
-    #mode-menu.menu-open:hover .tooltip-text{
-      visibility: visible;
-      top: 25%;
-      left: -200%;
-    }
 
 
 
@@ -404,6 +400,12 @@ overflow:auto;
 
   #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #mobile-menu.is-active{
+      top: 20%;
+    right: 80px;
+    transform: translate(5%, 20%);
     }
 }
 
@@ -480,15 +482,15 @@ overflow:auto;
   }
 
   .social__icon--logo{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transition: all 0.35s;
-    filter: invert(var(--logoColor));
+    background-color: var(--white);
   }
 
   .social__icon--logo:hover{
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
   }
   
   .social__media {
@@ -684,8 +686,10 @@ Introduction Section CSS
 .button__icon--logo{
 
   z-index: 2;
-  height: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
 
+  background-color: white;
 
 
   position: absolute;
@@ -891,7 +895,7 @@ Introduction Section CSS
 .info--wrapper{
   margin: 0px auto 80px auto;
   width: 100%;
-  padding: 0px 50px;
+
 }
 
 .subjectHeader{
@@ -936,7 +940,7 @@ Introduction Section CSS
   animation-timing-function: cubic-bezier(1, 0, 1, 0);
 
   
-
+  transition: none;
 }
 #CCcardImg{
   width: 100%;
@@ -1500,15 +1504,6 @@ background-repeat: no-repeat;
   text-align: center;
 }
 
-.Contact__Info img{
-  height: 100%;
-  width: 100%;
-  max-height: 100px;
-  max-width: 100px;
-
-  filter: invert(var(--logoColor));
-}
-
 .Contact__Disc{
   padding-bottom: 3rem;
 }
@@ -1527,13 +1522,14 @@ background-repeat: no-repeat;
 
 .Contact__Info{
   display: flex;
-  
+  position: relative;
   margin: auto;
+  align-items: center;
 }
 
 .Contact__Info div{
   text-align: start;
-  margin: auto 10px;
+  position: relative;
 }
 
 .Contact__Info h3{
@@ -1550,6 +1546,26 @@ background-repeat: no-repeat;
   font-size: 1.25rem;
   color: var(--activeLink);
 }
+
+.Contact__Infoimg{
+
+  width: 15vi;
+  height: 15vi;
+
+  max-width: 200px;
+  max-height: 200px;
+
+  background-color: var(--white);
+
+  margin-bottom: 0px;
+}
+
+#ContactEmailLogo{
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 15px;
+}
+
 
 .Tech__Stack--wrap{
   cursor: pointer;
@@ -1615,12 +1631,17 @@ margin: 35px 0;
     display: block;
   }
   .Contact__Info{
-    display: block;
+    flex-direction: column;
   }
   .Contact__Info div{
     text-align: center;
-    margin-bottom: 50px;
   }
+  
+.Contact__Info__Disc{
+  margin-bottom: 50px;
+  color: #f2f2f2;
+}
+
   .content--wrapper{
     padding: 0;
   }
@@ -1633,4 +1654,37 @@ margin: 35px 0;
     padding: 0;
     margin: 0 auto;
   }
+  .Contact__Infoimg{
+    height: 50vw;
+    width: 50vw;
+  }
+
+}
+
+.Linkedin-Logo{
+
+  -webkit-mask: url("/images/Logos/linkedin.svg") no-repeat center;
+  mask: url("/images/Logos/linkedin.svg") no-repeat center;
+
+}
+
+.Email-Logo{
+
+  -webkit-mask: url("/images/Logos/email.svg") no-repeat center;
+  mask: url("/images/Logos/email.svg") no-repeat center;
+
+}
+
+.Youtube-Logo{
+
+  -webkit-mask: url("/images/Logos/youtube.svg") no-repeat center;
+  mask: url("/images/Logos/youtube.svg") no-repeat center;
+
+}
+
+.Github-Logo{
+
+  -webkit-mask: url("/images/Logos/github.svg") no-repeat center;
+  mask: url("/images/Logos/github.svg") no-repeat center;
+
 }

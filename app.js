@@ -59,7 +59,6 @@ function UpdateTheme(){
     document.querySelector(':root').style.setProperty('--white', 'white');
     document.querySelector(':root').style.setProperty('--gray', '#bfbfbf');
     document.querySelector(':root').style.setProperty('--gray2', '#fafafa');
-    document.querySelector(':root').style.setProperty('--logoColor', '0%'); 
     document.querySelector(':root').style.setProperty('--link', '#f77062');
     document.querySelector(':root').style.setProperty('--activeLink', '#378eff');
     document.querySelector(':root').style.setProperty('--rotateDeg', '0deg');
@@ -71,8 +70,7 @@ function UpdateTheme(){
     document.querySelector(':root').style.setProperty('--background3', '#ebebeb');
     document.querySelector(':root').style.setProperty('--white', 'black');
     document.querySelector(':root').style.setProperty('--gray', '#404040');
-    document.querySelector(':root').style.setProperty('--gray2', '#cccccc');
-    document.querySelector(':root').style.setProperty('--logoColor', '100%');
+    document.querySelector(':root').style.setProperty('--gray2', '#f2f2f2');
     document.querySelector(':root').style.setProperty('--link', '#f34c4c');
     document.querySelector(':root').style.setProperty('--activeLink', '#1f70db');
     document.querySelector(':root').style.setProperty('--rotateDeg', '180deg');
