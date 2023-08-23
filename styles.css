@@ -354,7 +354,7 @@ overflow:auto;
 }
 
 .navPortfolio__SubMenu.active .bar{
-  background: var(--link);
+  background: var(--activeLink);
 }
 
 .navPortfolio__SubMenu.active #Portfolio__SubMenu{
