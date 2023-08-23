@@ -116,6 +116,7 @@ function UpdateMenuBar(){
   if(menu.classList == ("navbar__toggle is-active")){
     toggleMenubar();
   }
+  document.querySelector('#navPortfolioMenu').classList.remove('active');
 
   //highlight current area in nav menu
   if(elementIsVisibleInViewport(document.getElementById("Hometag"))){//Home
