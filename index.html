@@ -44,8 +44,19 @@
           <li class="navbar__item">
             <a href="#About" class="navbar__links" id="AboutLink">About</a>
           </li>
-          <li class="navbar__item">
-            <a href="#Portfolio" class="navbar__links" id="PortfolioLink">Portfolio</a>
+          <li class="navbar__item navPortfolio__SubMenu" id="navPortfolioMenu">
+            <div id="navPortfolio--wrap">
+              <a href="#Portfolio" class="navbar__links" id="PortfolioLink">Portfolio</a>
+              <div class="navbar__toggle" id="Portfolio__SubMenu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+              </div>
+            </div>
+            <ul class="NavSubMenu" id="NavSubMenu">
+              <li class="NavSubMenu__Item"><a href="#Portfolio-ClassyCloset" class="navbar__links" id="CCPortfolioLink">Classy Closet</a></li>
+              <li class="NavSubMenu__Item"><a href="#Portfolio-MAID" class="navbar__links" id="MAIDPortfolioLink">M.A.I.D.</a></li>
+              <li class="NavSubMenu__Item"><a href="#Portfolio-ERD" class="navbar__links" id="ERDPortfolioLink">E.R.D.</a></li>
+            </ul>
           </li>
           <li class="navbar__item">
             <a href="#Contact" class="navbar__links" id="ContactLink">Contact</a>
@@ -198,9 +209,10 @@
         <h2 class="subjectHeader" id="Portfolio">Portfolio</h2>
                   
         <!--Classy Closet-->
+        <div class="NavMenuLocation" id="Portfolio-ClassyCloset"></div>
         <div>
             <div>
-              <h3 class="subjectSubheader" id="Portfolio-ClassyCloset">Classy Closet</h3>
+              <h3 class="subjectSubheader">Classy Closet</h3>
 
               <div class="ImageCenterItem">
                 <div class="CCcard">
@@ -258,10 +270,10 @@
               <div id="Portfolio-ClassyCloset--end"></div>
             </div>
             <!--Mobile Application Item Database-->
-
+            <div class="NavMenuLocation" id="Portfolio-MAID"></div>
             <div>
               <div>
-                <h3 class="subjectSubheader" id="Portfolio-MAID">Mobile Application Item Database</h3>
+                <h3 class="subjectSubheader" >Mobile Application Item Database</h3>
   
                 <div class="ImageCenterItem">
                   <div class="MAIDcard">
@@ -307,10 +319,11 @@
             </div>
             <div id="Portfolio-MAID--end"></div>
         </div>
-            <!--Employee Record Database--> 
+            <!--Employee Record Database-->
+            <div class="NavMenuLocation" id="Portfolio-ERD"></div> 
             <div>
               <div>
-                <h3 class="subjectSubheader" id="Portfolio-ERD">Employee Record Database</h3>
+                <h3 class="subjectSubheader">Employee Record Database</h3>
                 
                 <div class="ImageCenterItem">
                   <div class="ERDcard">

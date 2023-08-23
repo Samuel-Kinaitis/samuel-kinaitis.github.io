@@ -94,6 +94,10 @@ var CurrentDocumentLocation = document.getElementById("HomeLink");
 CurrentDocumentLocation.className = "navbar__links__active"
 var LastDocumentLocation = document.getElementById("HomeLink");
 
+var SubCurrentDocumentLocation = document.getElementById("HomeLink");
+
+var SubLastDocumentLocation = document.getElementById("HomeLink");
+
 document.addEventListener("scroll", (event) => {
 
   UpdateMenuBar();
@@ -102,6 +106,10 @@ document.addEventListener("scroll", (event) => {
 });
 
 UpdateMenuBar();
+
+document.getElementById("Portfolio__SubMenu").addEventListener('click', function(){
+  document.querySelector('#navPortfolioMenu').classList.toggle('active');
+});
 
 function UpdateMenuBar(){
   //Close menu if opened while scrolling
@@ -122,29 +130,35 @@ function UpdateMenuBar(){
   } else if(elementIsVisibleInViewport(document.getElementById("Contact"))){//Contact
     CurrentDocumentLocation = document.getElementById("ContactLink");
     updateURLbarToLocation("Contact");
+  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset"))){//Portoflio CC
+    CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    SubCurrentDocumentLocation = document.getElementById("CCPortfolioLink");
+    updateURLbarToLocation("Portfolio-ClassyCloset");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio"))){//Portoflio
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
     updateURLbarToLocation("Portfolio");
   } else if(elementIsVisibleInViewport(document.getElementById("about--end"))){//About
     CurrentDocumentLocation = document.getElementById("AboutLink");
     updateURLbarToLocation("About");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset"))){//Portoflio CC
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    updateURLbarToLocation("Portfolio-ClassyCloset");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-MAID"))){//Portoflio MAID
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    SubCurrentDocumentLocation = document.getElementById("MAIDPortfolioLink");
     updateURLbarToLocation("Portfolio-MAID");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ERD"))){//Portoflio ERD
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    SubCurrentDocumentLocation = document.getElementById("ERDPortfolioLink");
     updateURLbarToLocation("Portfolio-ERD");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ERD--end"))){//Portoflio ERD end
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    SubCurrentDocumentLocation = document.getElementById("ERDPortfolioLink");
     updateURLbarToLocation("Portfolio-ERD");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-MAID--end"))){//Portoflio MAID end
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    SubCurrentDocumentLocation = document.getElementById("MAIDPortfolioLink");
     updateURLbarToLocation("Portfolio-MAID");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset--end"))){//Portoflio CC end
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    SubCurrentDocumentLocation = document.getElementById("CCPortfolioLink");
     updateURLbarToLocation("Portfolio-ClassyCloset");
   } else if(elementIsVisibleInViewport(document.getElementById("Networks"))){//Networks
     CurrentDocumentLocation = document.getElementById("NetworkLink");
@@ -159,9 +173,29 @@ function UpdateMenuBar(){
     LastDocumentLocation.className = "navbar__links"
     CurrentDocumentLocation.className = "navbar__links__active"
     LastDocumentLocation = CurrentDocumentLocation;
+
+
+    if(SubCurrentDocumentLocation != SubLastDocumentLocation && SubCurrentDocumentLocation != null){
+      if(SubLastDocumentLocation != null){
+        SubLastDocumentLocation.className = "navbar__links"
+      }
+      SubCurrentDocumentLocation.className = "navbar__links__active"
+      SubLastDocumentLocation = SubCurrentDocumentLocation;
+    }
+    if(CurrentDocumentLocation == document.getElementById("PortfolioLink")){
+      document.querySelector('#navPortfolioMenu').classList.add('Submenu-active');
+    } else if(SubLastDocumentLocation != null){
+      SubCurrentDocumentLocation.className = "navbar__links"
+      document.querySelector('#navPortfolioMenu').classList.remove('Submenu-active');
+      SubLastDocumentLocation = null;
+    }
+  }
+  if(SubCurrentDocumentLocation != SubLastDocumentLocation && SubLastDocumentLocation != null){
+    SubLastDocumentLocation.className = "navbar__links"
+    SubCurrentDocumentLocation.className = "navbar__links__active"
+    SubLastDocumentLocation = SubCurrentDocumentLocation;
   }
 }
-
 
 //Update ands Save the URL when scrolling - Prevents (Issue 1038223: history.pushState abuse hangs Chrome)
 function updateURLbarToLocation(Location){

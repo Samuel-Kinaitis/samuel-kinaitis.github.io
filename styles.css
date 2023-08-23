@@ -94,7 +94,7 @@ overflow:auto;
     justify-content: space-between;
     /*If you change height, fix margins on all main containers*/
     height: 80px;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     max-width: 1300px;
     margin:0 auto;
@@ -127,7 +127,7 @@ overflow:auto;
 
 .navbar__menu {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     list-style: none;
     text-align: center;
     padding-right: 5px;
@@ -267,6 +267,100 @@ overflow:auto;
   z-index: 9999;
 }
 
+
+
+#PortfolioLink{
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+
+#navPortfolio--wrap{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 0 1rem;
+  justify-content: center;
+  transition: none;
+  height: 100%;
+}
+
+#Portfolio__SubMenu{
+  position: relative;
+
+  cursor: pointer;
+  transform: rotate(270deg);
+  width: 100%;
+
+}
+
+.navPortfolio__SubMenu .bar{
+  display: block;
+  width: 15px;
+  height: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: var(--white);
+}
+
+.navPortfolio__SubMenu.Submenu-active .bar{
+  background: var(--activeLink);
+}
+
+
+.navPortfolio__SubMenu .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navPortfolio__SubMenu .bar:nth-child(2) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#navPortfolio--wrap:hover .bar{
+  background: var(--link);
+}
+
+.NavSubMenu{
+  display: block;
+  padding: 5px 0;
+  list-style: none;
+  background-color: var(--background2);
+  position: relative;
+  
+  border-radius: 0 0 25% 25%;
+  top: -150px;
+  justify-self: center;
+  position: absolute;
+}
+
+.NavSubMenu__Item{
+  margin: 15px 0;
+  height: 30px;
+}
+
+.NavSubMenu__Item .navbar__links{
+  padding: 20px 11px;
+}
+
+.NavSubMenu:hover{
+  top: 75px;
+}
+
+#navPortfolioMenu:hover .NavSubMenu{
+  top: 75px;
+}
+
+.navPortfolio__SubMenu.active .NavSubMenu{
+  top: 75px;
+}
+
+.navPortfolio__SubMenu.active .bar{
+  background: var(--link);
+}
+
+.navPortfolio__SubMenu.active #Portfolio__SubMenu{
+  transform: rotate(90deg);
+}
+
 @media screen and (max-width: 960px){
     .navbar__container{
         display: flex;
@@ -332,6 +426,27 @@ overflow:auto;
         width: 100%;
         display: table;
         transition: none;
+    }
+
+    .navPortfolio--wrap{
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      transition: none;
+    }
+
+    #PortfolioLink{
+      margin: 0;
+      padding: 2rem;
+    }
+
+    #Portfolio__SubMenu{
+      display: none;
+    }
+
+    .NavSubMenu{
+      display: none;
     }
 
     #mobile-menu{
@@ -581,6 +696,11 @@ overflow:auto;
       padding: 0;
       height: 50px;
     }
+
+    #PortfolioLink{
+      padding: 0;
+    }
+
     .navbar__links{
       padding: 0px;
     }
@@ -1687,4 +1807,8 @@ margin: 35px 0;
   -webkit-mask: url("/images/Logos/github.svg") no-repeat center;
   mask: url("/images/Logos/github.svg") no-repeat center;
 
+}
+
+.NavMenuLocation{
+  height: 80px;
 }
