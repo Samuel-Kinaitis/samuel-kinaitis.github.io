@@ -131,13 +131,14 @@ function UpdateMenuBar(){
   } else if(elementIsVisibleInViewport(document.getElementById("Contact"))){//Contact
     CurrentDocumentLocation = document.getElementById("ContactLink");
     updateURLbarToLocation("Contact");
+  
+  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio"))){//Portoflio
+    CurrentDocumentLocation = document.getElementById("PortfolioLink");
+    updateURLbarToLocation("Portfolio");
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset"))){//Portoflio CC
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
     SubCurrentDocumentLocation = document.getElementById("CCPortfolioLink");
     updateURLbarToLocation("Portfolio-ClassyCloset");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio"))){//Portoflio
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    updateURLbarToLocation("Portfolio");
   } else if(elementIsVisibleInViewport(document.getElementById("about--end"))){//About
     CurrentDocumentLocation = document.getElementById("AboutLink");
     updateURLbarToLocation("About");

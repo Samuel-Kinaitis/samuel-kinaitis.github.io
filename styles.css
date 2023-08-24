@@ -288,34 +288,25 @@ overflow:auto;
   position: relative;
 
   cursor: pointer;
-  transform: rotate(270deg);
-  width: 100%;
+  
+  width: 25px;
+  height: inherit;
 
-}
+  display: flex;
+  align-items: center
 
-.navPortfolio__SubMenu .bar{
-  display: block;
-  width: 15px;
-  height: 2px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background: var(--white);
 }
 
 .navPortfolio__SubMenu.Submenu-active .bar{
   background: var(--activeLink);
 }
 
-
-.navPortfolio__SubMenu .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+.navbar__toggle{
+  padding-left: 6px;
+  padding-right: 2px;
 }
 
-.navPortfolio__SubMenu .bar:nth-child(2) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-#navPortfolio--wrap:hover .bar{
+.navbar__toggle:hover .bar{
   background: var(--link);
 }
 
@@ -327,7 +318,7 @@ overflow:auto;
   position: relative;
   
   border-radius: 0 0 25% 25%;
-  top: -150px;
+  top: -200px;
   justify-self: center;
   position: absolute;
 }
@@ -338,6 +329,10 @@ overflow:auto;
 }
 
 .NavSubMenu__Item .navbar__links{
+  padding: 20px 11px;
+}
+
+.NavSubMenu__Item .navbar__links__active{
   padding: 20px 11px;
 }
 
@@ -357,8 +352,31 @@ overflow:auto;
   background: var(--activeLink);
 }
 
-.navPortfolio__SubMenu.active #Portfolio__SubMenu{
-  transform: rotate(90deg);
+.navPortfolio__SubMenu .bar{
+  position: absolute;
+  display: block;
+  top: 43%;
+  width: 15px;
+  height: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: var(--white);
+}
+
+.navPortfolio__SubMenu .bar:nth-child(1) {
+  transform: translateX(5px) rotate(45deg);
+}
+
+.navPortfolio__SubMenu .bar:nth-child(2) {
+  transform: translateX(-5px) rotate(-45deg);
+}
+
+.navPortfolio__SubMenu.active .bar:nth-child(1){
+  transform: translateX(5px) rotate(-45deg);
+}
+
+.navPortfolio__SubMenu.active .bar:nth-child(2){
+  transform: translateX(-5px) rotate(45deg);
 }
 
 @media screen and (max-width: 960px){
@@ -428,9 +446,9 @@ overflow:auto;
         transition: none;
     }
 
-    .navPortfolio--wrap{
+    #navPortfolio--wrap{
       text-align: center;
-      padding: 2rem;
+
       width: 100%;
       display: table;
       transition: none;
@@ -683,7 +701,7 @@ overflow:auto;
     }
     
   main{
-    padding:0 5px ;
+    padding:0 15px ;
   }
   }  
 
@@ -719,6 +737,8 @@ Introduction Section CSS
   align-items: center;
   justify-self: center;
   margin: 80px auto;
+
+  min-height: 80vh;
   
   background-color: var(--background);
   z-index: 1;
@@ -939,6 +959,7 @@ Introduction Section CSS
   
 }
 #main__img{
+
   border: var(--white) 3px solid;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   padding: 3px;
@@ -946,11 +967,14 @@ Introduction Section CSS
   max-width: 100%;
   margin: 22px;
   
-  
+  height: 100%;
+  width: auto;
 
   transition: all 1s ease-in-out;
   animation: morph 8s ease-in-out infinite;
 }
+
+
 
 @keyframes morph {
   0% {
@@ -985,6 +1009,21 @@ Introduction Section CSS
       margin-top: 1rem;
       font-size: 1.5rem;
   }
+}
+
+
+.about-wrap p{
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  margin: 35px 0;
+}
+
+.TextSection{
+
+  line-height: 2rem;
+  font-size: 1.25rem;
+  margin: 0 5px 50px 0;
 }
 
 /* Mobile Responsive Small */
@@ -1035,12 +1074,7 @@ Introduction Section CSS
 
 
 
-.about-wrap p{
-  text-align: center;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  margin: 35px 0;
-}
+
 
 /*Classy Closet Image*/
 
@@ -1599,6 +1633,10 @@ background-repeat: no-repeat;
   }
   .portfolioBtnsMobile{
     display: flex;
+  }
+  .TextSection{
+    text-align: center;
+    margin: 0 0 50px 0;
   }
 }
 
