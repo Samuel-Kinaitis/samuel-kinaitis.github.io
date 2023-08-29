@@ -390,6 +390,10 @@ overflow:auto;
         padding: 0;
     }
 
+    .navbar__toggle:hover .bar{
+      background: var(--white);
+    }
+
     .navbar__menu{
         display:grid;
         grid-template-columns: auto;
