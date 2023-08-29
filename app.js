@@ -10,6 +10,16 @@ menu.addEventListener('click', function() {
   toggleMenubar();
 });
 
+//Doucment locations -- Default Home
+var CurrentDocumentLocation = document.getElementById("HomeLink");
+CurrentDocumentLocation.className = "navbar__links__active"
+var LastDocumentLocation = document.getElementById("HomeLink");
+
+  //Sub Document locations for sub menus -- Defualt Null (Can't have a sub location if no sub location to be had?)
+  var SubCurrentDocumentLocation = "nulled"; //Kind of silly but fixes the state of location being nothing
+  var SubLastDocumentLocation = null;
+//
+
 function toggleMenubar(){
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
@@ -90,13 +100,7 @@ function elementIsVisibleInViewport (el) {
   );
 }
 
-var CurrentDocumentLocation = document.getElementById("HomeLink");
-CurrentDocumentLocation.className = "navbar__links__active"
-var LastDocumentLocation = document.getElementById("HomeLink");
 
-var SubCurrentDocumentLocation = document.getElementById("HomeLink");
-
-var SubLastDocumentLocation = document.getElementById("HomeLink");
 
 document.addEventListener("scroll", (event) => {
 
@@ -131,10 +135,10 @@ function UpdateMenuBar(){
   } else if(elementIsVisibleInViewport(document.getElementById("Contact"))){//Contact
     CurrentDocumentLocation = document.getElementById("ContactLink");
     updateURLbarToLocation("Contact");
-  
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio"))){//Portoflio
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
     updateURLbarToLocation("Portfolio");
+    SubCurrentDocumentLocation = "nulled";
   } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset"))){//Portoflio CC
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
     SubCurrentDocumentLocation = document.getElementById("CCPortfolioLink");
@@ -168,6 +172,7 @@ function UpdateMenuBar(){
   } else if(elementIsVisibleInViewport(document.getElementById("portfolio--end"))){//Portoflio
     CurrentDocumentLocation = document.getElementById("PortfolioLink");
     updateURLbarToLocation("Portfolio");
+    SubCurrentDocumentLocation = "nulled";
   }
 
   //Change highlighted area if different area
@@ -176,6 +181,7 @@ function UpdateMenuBar(){
     CurrentDocumentLocation.className = "navbar__links__active"
     LastDocumentLocation = CurrentDocumentLocation;
 
+    
 
     if(SubCurrentDocumentLocation != SubLastDocumentLocation && SubCurrentDocumentLocation != null){
       if(SubLastDocumentLocation != null){
