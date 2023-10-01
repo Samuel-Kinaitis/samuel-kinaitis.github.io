@@ -267,6 +267,10 @@ overflow:auto;
   z-index: 9999;
 }
 
+#mode-menu:hover{
+  background-color: var(--link);
+}
+
 
 
 #PortfolioLink{
