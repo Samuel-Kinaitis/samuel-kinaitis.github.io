@@ -1,3 +1,14 @@
+// Loading Screen Logic
+window.onload = function () {
+  // Hide the loading screen
+  document.querySelector('.loading-screen').style.display = 'none';
+
+  // Show the content
+  document.querySelector('.content').style.display = 'block';
+};
+
+
+
 //URL tracking
 var URLupdateCooldown = true;
 var LocationURL = "Home";
@@ -88,7 +99,7 @@ function UpdateTheme(){
   }
 }
 
-
+//funky bounding box logic of elements and locations relative to the screen (All locations must be true)
 function elementIsVisibleInViewport (el) {
   var rect = el.getBoundingClientRect();
 

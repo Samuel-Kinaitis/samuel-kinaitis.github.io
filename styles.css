@@ -43,16 +43,12 @@ main{
   padding: 0px 20px;
   min-height: 75vh;
   position: relative;
+  overflow:auto;
 }
 
 
 body{
   background-color: var(--background);
-}
-
-.main{
-/* If for some reason content doesn't fit?*/
-overflow:auto;
 }
 
 .tooltip-text{
@@ -1857,4 +1853,205 @@ margin: 35px 0;
 
 .NavMenuLocation{
   height: 80px;
+}
+
+
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.ring-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  width: 50vh;
+  max-width: 50vw;
+  height: 50vh;
+  max-height: 50vw;
+  border: 2vh solid var(--activeLink);
+  border-radius: 50%;
+  position: absolute;
+  animation: splash 4s linear infinite, borderChange 8s linear infinite;;
+  box-sizing: content-box;
+}
+
+#ring2 {
+  animation: splash 4s linear 2s infinite, borderChange 8s linear infinite;;
+  opacity: 0;
+}
+
+
+.logo-img {
+  width: 50vh;
+  max-width: 50vw;
+}
+
+.loading-text {
+  margin-top: auto;
+  margin-bottom: 50px;
+  font-size: 4em;
+}
+
+@media screen and (max-width: 960px){
+  .loading-text {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (max-height: 600px){
+  .loading-text {
+    display: none;
+  }
+}
+
+@keyframes splash {
+  0% {
+      
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1.5);
+      opacity: 0;
+  }
+}
+
+@keyframes borderChange {
+  0% {
+    border-color: var(--link);
+  }
+  25% {
+    border-color: var(--link);
+  }
+  50% {
+    border-color: var(--activeLink);
+  }
+  75% {
+    border-color: var(--activeLink);
+  }
+  100% {
+    border-color: var(--link);
+  }
+}
+
+/* Initial color of the SVG path with class s0 */
+.s0 {
+  fill: var(--activeLink); 
+  animation: svgColorChangeS0 8s linear infinite;
+}
+
+@keyframes svgColorChangeS0 {
+  0% {
+    fill: var(--link);
+  }
+  25% {
+    fill: var(--link);
+  }
+  50% {
+    fill: var(--activeLink);
+  }
+  75% {
+    fill: var(--activeLink);
+  }
+  100% {
+    fill: var(--link);
+  }
+}
+
+/* Initial color of the SVG path with class s1 */
+.s1 {
+  fill: var(--white); 
+  animation: svgColorChangeS1 8s linear infinite;
+}
+
+@keyframes svgColorChangeS1 {
+  0% {
+    fill: var(--background);
+  }
+  25% {
+    fill: var(--background);
+  }
+  50% {
+    fill: var(--white);
+  }
+  75% {
+    fill: var(--white);
+  }
+  100% {
+    fill: var(--background);
+  }
+}
+
+/* Initial color of the SVG path with class s2 */
+.s2 {
+  fill: var(--background); 
+  animation: svgColorChangeS2 8s linear infinite;
+}
+
+@keyframes svgColorChangeS2 {
+  0% {
+    fill: var(--white);
+  }
+  25% {
+    fill: var(--white);
+  }
+  50% {
+    fill: var(--background);
+  }
+  75% {
+    fill: var(--background);
+  }
+  100% {
+    fill: var(--white);
+  }
+}
+
+/* Initial color of the SVG path with class s3 */
+.s3 {
+  fill: var(--link); 
+  animation: svgColorChangeS3 8s linear infinite; 
+}
+
+@keyframes svgColorChangeS3 {
+  0% {
+    fill: var(--activeLink);
+  }
+  25% {
+    fill: var(--activeLink);
+  }
+  50% {
+    fill: var(--link);
+  }
+  75% {
+    fill: var(--link);
+  }
+  100% {
+    fill: var(--activeLink); 
+  }
+}
+
+/* Hide the content initially */
+.main-content {
+  display: none; 
 }
