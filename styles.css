@@ -204,56 +204,50 @@ body{
     transition: all 0.3s ease;
 }
 
-#mode-menu{
+#mode-menu {
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 2%;
   transform: translate(2%, 20%);
-
   transition: none;
-
-  width: 30px;
-  height: 30px;
-
+  width: 40px;
+  height: 40px;
   background-color: var(--white);
   border-radius: 100%;
-
   cursor: pointer;
 }
 
-#mode-menu .mode-menu-2nd{
+#mode-menu .mode-menu-2nd {
   width: 90%;
   height: 90%;
   background-color: var(--background);
   border-radius: 100%;
-
   transition: none;
-
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
 }
 
-#mode-menu .mode-menu-3rd{
+#mode-menu .mode-menu-3rd {
   transition: transform 0.3s ease-in-out;
-
-  
-
   width: 40%;
   height: 80%;
   background-color: var(--white);
-
   border-radius: 0 10rem 10rem 0;
-
   position: absolute;
   top: 50%;
   left: 69%;
-  -ms-transform: translate(-50%, -50%);
-  /*Bookmark*/
   transform: translate(-50%, -50%) translateX(var(--rotatePos)) rotate(var(--rotateDeg));
+}
+
+.tooltip-text {
+  /* Adjust tooltip styles as needed */
+  position: absolute;
+  top: 50%;
+  right: 120%;
+  transform: translateY(-50%);
+  white-space: nowrap;
 }
 
 #mode-menu:hover .tooltip-text{
