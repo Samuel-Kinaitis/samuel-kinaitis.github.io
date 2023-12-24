@@ -241,15 +241,6 @@ body{
   transform: translate(-50%, -50%) translateX(var(--rotatePos)) rotate(var(--rotateDeg));
 }
 
-.tooltip-text {
-  /* Adjust tooltip styles as needed */
-  position: absolute;
-  top: 50%;
-  right: 120%;
-  transform: translateY(-50%);
-  white-space: nowrap;
-}
-
 #mode-menu:hover .tooltip-text{
   visibility: visible;
   top: 250%;
