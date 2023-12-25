@@ -210,8 +210,8 @@ body{
   right: 2%;
   transform: translate(2%, 20%);
   transition: none;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   background-color: var(--white);
   border-radius: 100%;
   cursor: pointer;
@@ -1061,516 +1061,84 @@ Introduction Section CSS
   padding-top: 5rem;
 }
 
+/* Portfolio Slideshow */
 
-
-
-
-/*Classy Closet Image*/
-
-
-.CCcard {
-  
-  background: url("/images/ClassyCloset/image.webp") no-repeat;
-  border-radius: 25px;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-  animation-name: CCimageChange;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(1, 0, 1, 0);
-
-  
-  transition: none;
-}
-#CCcardImg{
+.slider-container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  visibility: hidden;
+  height: auto;
   border-radius: 25px;
-  width: 89vw;
-  height: 100%;
-  max-width: 1200px;
 }
 
-@keyframes CCimageChange {
-      11%{
-  background: url("/images/ClassyCloset/image (1).webp") no-repeat;
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
   border-radius: 25px;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-          }
-      22%{
-          background: url("/images/ClassyCloset/image (2).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      33%{
-          background: url("/images/ClassyCloset/image (3).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      44%{
-          background: url("/images/ClassyCloset/image (4).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      55%{
-          background: url("/images/ClassyCloset/image (5).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-  66%{
-          background: url("/images/ClassyCloset/image (6).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-  77%{
-          background: url("/images/ClassyCloset/image (7).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-  88%{    background: url("/images/ClassyCloset/image (8).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-  100%{
-          background: url("/images/ClassyCloset/image.webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
 }
 
-/*Empolyee Record Database*/
-
-.ERDcard {
-  background: url("/images/ERD/ERDimage.webp") no-repeat;
-  border-radius: 25px;
-  background-size: cover;
-    display: inline-block;
-  background-repeat: no-repeat;
-  animation-name: ERDimageChange;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(1, 0, 1, 0);
-
-}
-#ERDcardImg{
-  width: 100%;
-  visibility: hidden;
-  border-radius: 25px;
-  max-width: 750px;
-  width: 80vw;
-  height: 100%;
+.slide {
+  flex: 0 0 100%;
 }
 
-@keyframes ERDimageChange {
-      17%{
-  background: url("/images/ERD/ERDimage\(1\).webp") no-repeat;
-  border-radius: 25px;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-          }
-      34%{
-          background: url("/images/ERD/ERDimage\(2\).webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      51%{
-        background: url("/images/ERD/ERDimage\(3\).webp") no-repeat;
-        border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      68%{
-        background: url("/images/ERD/ERDimage\(4\).webp") no-repeat;
-        border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      85%{
-        background: url("/images/ERD/ERDimage\(5\).webp") no-repeat;
-        border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-        100%{
-          background: url("/images/ERD/ERDimage.webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
+.dots-container {
+
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*MAID*/
-
-.MAIDcard {
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: var(--gray);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 70%;
   
-  background: url("/images/MAID/MAIDimage.webp") no-repeat;
-  border-radius: 25px;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-  animation-name: MAIDimageChange;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(1, 0, 1, 0);
-
-}
-#MAIDcardImg{
-  width: 100%;
-  visibility: hidden;
-  border-radius: 25px;
-  
-  max-width: 500px;
-  width: 80vw;
-  height: 100%;
 }
 
-@keyframes MAIDimageChange {
-  14%{
-    background: url("/images/MAID/MAIDimage\(1\).webp") no-repeat;
-    border-radius: 25px;
-    background-size: cover;
-    display: inline-block;
-    background-repeat: no-repeat;
-            }
-        28%{
-            background: url("/images/MAID/MAIDimage\(2\).webp") no-repeat;
-            border-radius: 25px;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-        42%{
-          background: url("/images/MAID/MAIDimage\(3\).webp") no-repeat;
-          border-radius: 25px;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-        52%{
-          background: url("/images/MAID/MAIDimage\(4\).webp") no-repeat;
-          border-radius: 25px;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-        70%{
-          background: url("/images/MAID/MAIDimage\(5\).webp") no-repeat;
-          border-radius: 25px;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-          84%{
-            background: url("/images/MAID/MAIDimage\(6\).webp") no-repeat;
-            border-radius: 25px;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-          100%{
-          background: url("/images/MAID/MAIDimage.webp") no-repeat;
-          border-radius: 25px;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
+.dot.active {
+  background-color: var(--background3);
 }
 
-/*Windows Logos*/
-.Windowscard {
-
-  margin: 0;
+.slider-container button {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-  margin: 0;
-  height: 50px;
-  width: 50px;
-  transition: all 0.35s;
-
-  background: url("/images/TechStack/Windows/Windows98.webp") no-repeat;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-  animation-name: WindowsimageChange;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(1, 0, 1, 0);
-}
-#WindowscardImg{
-
-  visibility: hidden;
-
+  transform: translateY(-50%);
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--link);
+  padding: 15px;
+  opacity: 70%;
 }
 
-@keyframes WindowsimageChange {
-      25%{
-  background: url("/images/TechStack/Windows/Windows10-11.webp") no-repeat;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-          }
-      50%{
-          background: url("/images/TechStack/Windows/Windows8-10-S.webp") no-repeat;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      75%{
-          background: url("/images/TechStack/Windows/Windows7-XP.webp") no-repeat;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-      100%{
-          background: url("/images/TechStack/Windows/Windows98.webp") no-repeat;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
+.slider-container button:hover {
+  color: var(--activeLink);
 }
 
-/*Microsoft Logos*/
-.Microsoftcard {
-
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-  margin: 0;
-  height: 50px;
-  width: 50px;
-  transition: all 0.35s;
-
-  background: url("/images/TechStack/Microsoft365/MS365.webp") no-repeat;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-  animation-name: MicrosoftimageChange;
-  animation-duration: 22s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(1, 0, 1, 0);
-}
-#MicrosoftcardImg{
-  visibility: hidden;
+.slide img {
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 25px;
 }
 
-@keyframes MicrosoftimageChange {
-9%{
-background: url("/images/TechStack/Microsoft365/Office.webp") no-repeat;
-background-size: cover;
-display: inline-block;
-background-repeat: no-repeat;
-}
-18%{
-  background: url("/images/TechStack/Microsoft365/Word.webp") no-repeat;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-  }
-  27%{
-    background: url("/images/TechStack/Microsoft365/Excel.webp") no-repeat;
-    background-size: cover;
-    display: inline-block;
-    background-repeat: no-repeat;
-    }
-    36%{
-      background: url("/images/TechStack/Microsoft365/Powerpoint.webp") no-repeat;
-      background-size: cover;
-      display: inline-block;
-      background-repeat: no-repeat;
-      }
-      45%{
-        background: url("/images/TechStack/Microsoft365/Outlook.webp") no-repeat;
-        background-size: cover;
-        display: inline-block;
-        background-repeat: no-repeat;
-        }
-        54%{
-          background: url("/images/TechStack/Microsoft365/Onedrive.webp") no-repeat;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-          63%{
-            background: url("/images/TechStack/Microsoft365/Sharepoint.webp") no-repeat;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-            72%{
-              background: url("/images/TechStack/Microsoft365/Planner.webp") no-repeat;
-              background-size: cover;
-              display: inline-block;
-              background-repeat: no-repeat;
-              }
-              81%{
-                background: url("/images/TechStack/Microsoft365/Visio.webp") no-repeat;
-                background-size: cover;
-                display: inline-block;
-                background-repeat: no-repeat;
-                }
-                90%{
-                  background: url("/images/TechStack/Microsoft365/Access.webp") no-repeat;
-                  background-size: cover;
-                  display: inline-block;
-                  background-repeat: no-repeat;
-                  }
-          
-
-      100%{
-          background: url("/images/TechStack/Microsoft365/MS365.webp") no-repeat;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
+.prev {
+  left: 10px;
 }
 
-/*Google Logos*/
-.Googlecard {
-
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-  margin: 0;
-  height: 50px;
-  width: 50px;
-  transition: all 0.35s;
-
-  background: url("/images/TechStack/Google/Google.webp") no-repeat;
-  background-size: cover;
-  display: inline-block;
-  background-repeat: no-repeat;
-  animation-name: GoogleimageChange;
-  animation-duration: 22s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(1, 0, 1, 0);
+.next {
+  right: 10px;
 }
-#GooglecardImg{
-
-  visibility: hidden;
-
-}
-
-@keyframes GoogleimageChange {
-  9%{
-    background: url("/images/TechStack/Google/Drive.webp") no-repeat;
-    background-size: cover;
-    display: inline-block;
-    background-repeat: no-repeat;
-    }
-    18%{
-      background: url("/images/TechStack/Google/Docs.webp") no-repeat;
-      background-size: cover;
-      display: inline-block;
-      background-repeat: no-repeat;
-      }
-      27%{
-        background: url("/images/TechStack/Google/Sheets.webp") no-repeat;
-        background-size: cover;
-        display: inline-block;
-        background-repeat: no-repeat;
-        }
-        36%{
-          background: url("/images/TechStack/Google/Slides.webp") no-repeat;
-          background-size: cover;
-          display: inline-block;
-          background-repeat: no-repeat;
-          }
-          45%{
-            background: url("/images/TechStack/Google/Forms.webp") no-repeat;
-            background-size: cover;
-            display: inline-block;
-            background-repeat: no-repeat;
-            }
-            54%{
-              background: url("/images/TechStack/Google/Gmail.webp") no-repeat;
-              background-size: cover;
-              display: inline-block;
-              background-repeat: no-repeat;
-              }
-              63%{
-                background: url("/images/TechStack/Google/Meet.webp") no-repeat;
-                background-size: cover;
-                display: inline-block;
-                background-repeat: no-repeat;
-                }
-                72%{
-                  background: url("/images/TechStack/Google/WebStore.webp") no-repeat;
-                  background-size: cover;
-                  display: inline-block;
-                  background-repeat: no-repeat;
-                  }
-                  81%{
-                    background: url("/images/TechStack/Google/One.webp") no-repeat;
-                    background-size: cover;
-                    display: inline-block;
-                    background-repeat: no-repeat;
-                    }
-                    90%{
-                      background: url("/images/TechStack/Google/Play.webp") no-repeat;
-                      background-size: cover;
-                      display: inline-block;
-                      background-repeat: no-repeat;
-                      }
-              
-    
-          100%{
-            background: url("/images/TechStack/Google/Google.webp") no-repeat;
-            background-size: cover;
-              display: inline-block;
-              background-repeat: no-repeat;
-              }
-}
-
 
 /*Portfolio */
 .subjectSubheader{

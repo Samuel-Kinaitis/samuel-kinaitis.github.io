@@ -252,3 +252,97 @@ function playvideo(trigger){
 
 
 URLupdateCooldown = false;
+
+
+//SlideShow Stuff
+let autoSlideInterval;
+
+function initializeSlider(sliderId) {
+    const slider = document.getElementById(sliderId);
+    const slides = slider.querySelectorAll('.slide');
+    const dotsContainer = slider.querySelector('.dots-container');
+    
+    // Create a dot for each slide
+    for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.setAttribute('data-index', i);
+        dot.onclick = function () {
+            showSlide(sliderId, i);
+        };
+        dotsContainer.appendChild(dot);
+    }
+
+    // Clone the first slide and append it to the end for seamless loop
+    // const cloneFirstSlide = slides[0].cloneNode(true);
+    // slider.querySelector('.slider').appendChild(cloneFirstSlide);
+}
+
+function updateDots(sliderId) {
+    const slider = document.getElementById(sliderId);
+    const currentIndex = parseInt(slider.getAttribute('data-currentIndex')) || 0;
+    const dots = slider.querySelectorAll('.dot');
+
+    // Remove the 'active' class from all dots
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+
+    // Add the 'active' class to the current dot
+    dots[currentIndex].classList.add('active');
+}
+
+function showSlide(sliderId, index) {
+    const slider = document.getElementById(sliderId);
+    const slides = slider.querySelectorAll('.slide');
+    const slideWidth = slides[0].clientWidth;
+    const newPosition = -index * slideWidth;
+    slider.querySelector('.slider').style.transform = `translateX(${newPosition}px)`;
+    slider.setAttribute('data-currentIndex', index);
+    updateDots(sliderId);
+}
+
+function nextSlide(sliderId) {
+    const slider = document.getElementById(sliderId);
+    const totalSlides = slider.querySelectorAll('.slide').length;
+    let currentIndex = parseInt(slider.getAttribute('data-currentIndex')) || 0;
+    
+    currentIndex = (currentIndex + 1) % totalSlides;
+
+    if (currentIndex === 0) {
+        slider.querySelector('.slider').style.transition = 'none';
+        slider.querySelector('.slider').style.transform = 'translateX(0)';
+        setTimeout(() => {
+            slider.querySelector('.slider').style.transition = 'transform 0.5s ease-in-out';
+        }, 0);
+    }
+
+    slider.setAttribute('data-currentIndex', currentIndex);
+    showSlide(sliderId, currentIndex);
+}
+
+function prevSlide(sliderId) {
+    const slider = document.getElementById(sliderId);
+    const totalSlides = slider.querySelectorAll('.slide').length;
+    let currentIndex = parseInt(slider.getAttribute('data-currentIndex')) || 0;
+    
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+
+    if (currentIndex === totalSlides - 1) {
+        slider.querySelector('.slider').style.transition = 'none';
+        slider.querySelector('.slider').style.transform = `translateX(${-currentIndex * 100}%)`;
+        setTimeout(() => {
+            slider.querySelector('.slider').style.transition = 'transform 0.5s ease-in-out';
+        }, 0);
+    }
+
+    slider.setAttribute('data-currentIndex', currentIndex);
+    showSlide(sliderId, currentIndex);
+}
+
+document.querySelectorAll('.slider-container').forEach((slider) => {
+    initializeSlider(slider.id);
+      setInterval(() => {
+        nextSlide(slider.id);
+    }, 5000);
+});
