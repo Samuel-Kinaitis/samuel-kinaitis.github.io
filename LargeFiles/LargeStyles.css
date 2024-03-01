@@ -1604,7 +1604,48 @@ margin: 35px 0;
   }
 }
 
-/* Hide the content initially */
+/* Hide the content initially (loading screen) */
 .main-content {
   display: none; 
+}
+
+/* forms */
+#FormSumbitMessage{
+  display: none;
+}
+
+form{
+  font-size: 1.25rem;
+  
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.center--wrap{
+  text-align: center;
+}
+
+textarea {
+  resize: vertical;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input{
+  font-size: 1.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: var(--background3);
+  border-color: var(--background3);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
 }

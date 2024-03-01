@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal website of Samuel Kinaitis">
     <title>Samuel Kinaitis</title>
+
     <link rel="stylesheet" href="styles.css">
+    <!-- Larger stylesheet COMMENT OUT BEFORE PUSH -->
+    <!-- <link rel="stylesheet" href="/LargeFiles/LargeStyles.css"> -->
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
@@ -181,8 +184,8 @@
         
         <div class="Tech__Stack--container">
           <div class="Tech__Stack--wrap">
-            <img class="Tech__Stack--logo" src="/images/TechStack/XML.webp" alt="XML">
-            <span class="tooltip-text">XML</span>
+            <img class="Tech__Stack--logo" src="/images/TechStack/SQL.webp" alt="SQL">
+            <span class="tooltip-text">SQL</span>
           </div>
           <div class="Tech__Stack--wrap">
             <img class="Tech__Stack--logo" src="/images/TechStack/CSS.webp" alt="CSS">
@@ -656,6 +659,30 @@
             </div>
           </div>
         </div>
+
+        <div>
+          <h3 class="subjectSubheader">General Contact Form</h3>
+          <p class="Notice">Please refrain from spamming the contact form. <br> Thank you!</p>
+          <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLScxF42mgD05UhJQJa4NxlwB2DwKttjxYtyLVGi7k_4u-S-UCw/formResponse" method="POST" target="hidden_iframe">
+            <div class="form-group">
+            <label for="formEmail"><p>Contact Email:</p></label>
+            <input name="entry.628209952" type="email" id="formEmail" required>
+          </div>
+            <div class="form-group">
+            <label for="formSubject"><p>Subject:</p></label>
+            <input name="entry.1224790395" type="text" id="formSubject" required>
+          </div>
+          <div class="form-group">
+            <label for="formMessage"><p>Message:</p></label>
+            <textarea name="entry.1759010058" id="formMessage" rows="4" required></textarea> 
+          </div>
+          <div class="center--wrap">
+            <p id="FormSumbitMessage">Your message has been sent!</p>
+            <button type="submit" class="secondary__btn" id="formSubmitButton"><div class="Email-Logo button__icon--logo"></div><h3>Send</h3></button>
+          </div> 
+        </form>
+        </div>
+
       </div>
 
 
@@ -810,5 +837,7 @@
 </div>
 
 <script src="/app.js"></script>
+<!-- Larger app (not minfied) COMMENT OUT BEFORE PUSH-->
+<!-- <script src="/LargeFiles/Largeapp.js"></script> -->
 </body>
 </html>

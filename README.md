@@ -10,8 +10,6 @@ Projects
 
     APP - Food scanner
 
-    Web - Weather Portal
-
 
 *New Section - Volunteer Experience
 

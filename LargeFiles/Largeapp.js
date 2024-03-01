@@ -362,3 +362,33 @@ document.querySelectorAll('.slider-container').forEach((slider) => {
         nextSlide(slider.id);
     }, 5000);
 });
+
+
+//Form Logic
+var formButton = document.getElementById("formSubmitButton")
+// Intercept form submission
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  //LockForm button
+  formButton.disabled = true;
+  // Prevent the default form submission
+  event.preventDefault();
+  
+  // Submit the form data asynchronously
+  var formData = new FormData(this);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", this.action);
+  xhr.send(formData);
+  
+  // Reset the form fields
+  var form = document.getElementById("myForm");
+  form.reset();
+
+  //Show Submit messsage
+  document.getElementById("FormSumbitMessage").style.display = 'block';
+
+  //Remove message and enable button
+  setTimeout(function() {
+    document.getElementById("FormSumbitMessage").style.display = 'none';
+    button.disabled = false;
+  }, 12000);
+      });
