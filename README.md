@@ -16,11 +16,7 @@ Projects
 Talk about voluntering for the girl scouts (Talk about area code, give examples of what I did, pictures)
 
 
-*New section - Resume
-
-    Attach a downloadable PDF version of my generic resume and also put one onto the screen as normal    
-
-*New Section - Certificates and Awards
+*New Section - Certificates and Awards (don't know if I should do this 3/1/24)
 
     ACT WorkKeys
 
