@@ -5,6 +5,8 @@ window.onload = function () {
 
   // Show the content
   document.querySelector('.content').style.display = 'block';
+  //typing effect
+  type();
 };
 
 
@@ -392,3 +394,29 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     button.disabled = false;
   }, 12000);
       });
+
+
+//Typing effect - on load
+
+const text = "An Aspiring Computer Information Systems Professional";
+const typingText = document.getElementById('typing-text');
+
+let index = 0;
+let typingInterval;
+let cursorVisible = true;
+
+function type() {
+    typingInterval = setInterval(() => {
+        if (index <= text.length) {
+            typingText.textContent = text.substring(0, index);
+            if (cursorVisible) {
+                typingText.textContent += '|';
+            }
+            cursorVisible = !cursorVisible;
+            index++;
+        } else {
+            clearInterval(typingInterval);
+            typingText.textContent = text; // Show full text without cursor
+        }
+    }, Math.floor(Math.random() * (100 - 50 + 1)) + 25); // Adjust the speed by changing this value (in milliseconds)
+}

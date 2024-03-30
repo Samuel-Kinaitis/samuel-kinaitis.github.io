@@ -4,23 +4,13 @@ My personal website, and single page that includes the following sections: Home,
 
 Upcoming planning
 
-Make new nav bar (This one kind of sucks, too big for the stuff on it) and have it so that it hide when scrolling down (on mobile only if the bar is a nice size) 
+Make new nav bar (This one kind of sucks, too big for the stuff on it) and have it so that it hide when scrolling down (on mobile only if the bar is a nice size), also add it so that it's postion is dynamic (the thing I did with weather portal)
 
 Projects
 
     APP - Food scanner
 
-
-*New Section - Volunteer Experience
-
-Talk about voluntering for the girl scouts (Talk about area code, give examples of what I did, pictures)
-
-
-*New Section - Certificates and Awards (don't know if I should do this 3/1/24)
-
-    ACT WorkKeys
-
-    Other Linkedin awards
+    Figure out to link games? 
 
 Networks
 
