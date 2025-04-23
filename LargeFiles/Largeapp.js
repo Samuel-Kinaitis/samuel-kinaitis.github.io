@@ -39,7 +39,7 @@ function toggleMenubar(){
   document.querySelector('#mode-menu').classList.toggle('menu-open');
 }
 //Update Copy right to current year.
-document.getElementById("website__copyright").innerHTML = "Copyright &copy; 2023-" + new Date().getFullYear() +". All rights reserved";
+document.getElementById("website__copyright").innerHTML = "&copy; 2023-" + new Date().getFullYear() +". Samuel Kinaitis. Some content licensed under the MIT License.";
 //Theme mode
 //Theme icon mode clicked
 const modeMenu = document.getElementById("mode-menu");
@@ -136,73 +136,53 @@ function UpdateMenuBar(){
   document.querySelector('#navPortfolioMenu').classList.remove('active');
 
   //highlight current area in nav menu
-  if(elementIsVisibleInViewport(document.getElementById("Hometag"))){//Home
-    CurrentDocumentLocation = document.getElementById("HomeLink");
-    updateURLbarToLocation("Home");
-  } else if(elementIsVisibleInViewport(document.getElementById("About"))){//About
-    CurrentDocumentLocation = document.getElementById("AboutLink");
-    updateURLbarToLocation("About");
-  } else if(elementIsVisibleInViewport(document.getElementById("footer"))){//Networks
-    CurrentDocumentLocation = document.getElementById("NetworkLink");
-    updateURLbarToLocation("Networks");
-  } else if(elementIsVisibleInViewport(document.getElementById("Contact"))){//Contact
-    CurrentDocumentLocation = document.getElementById("ContactLink");
-    updateURLbarToLocation("Contact");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio"))){//Portoflio
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    updateURLbarToLocation("Portfolio");
-    SubCurrentDocumentLocation = "nulled";
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset"))){//Portoflio CC
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("CCPortfolioLink");
-    updateURLbarToLocation("Portfolio-ClassyCloset");
-  } else if(elementIsVisibleInViewport(document.getElementById("about--end"))){//About
-    CurrentDocumentLocation = document.getElementById("AboutLink");
-    updateURLbarToLocation("About");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-MusicStore"))){//Portoflio Music Store
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("MusicStorePortfolioLink");
-    updateURLbarToLocation("Portfolio-MusicStore");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-WeatherPortal"))){//Portoflio Weather Portal
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("WeatherPortalPortfolioLink");
-    updateURLbarToLocation("Portfolio-WeatherPortal");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-MAID"))){//Portoflio MAID
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("MAIDPortfolioLink");
-    updateURLbarToLocation("Portfolio-MAID");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ERD"))){//Portoflio ERD
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("ERDPortfolioLink");
-    updateURLbarToLocation("Portfolio-ERD");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ERD--end"))){//Portoflio ERD end
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("ERDPortfolioLink");
-    updateURLbarToLocation("Portfolio-ERD");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-MAID--end"))){//Portoflio MAID end
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("MAIDPortfolioLink");
-    updateURLbarToLocation("Portfolio-MAID");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-WeatherPortal--end"))){//Portoflio Weather Portal end
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("WeatherPortalPortfolioLink");
-    updateURLbarToLocation("Portfolio-WeatherPortal");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-MusicStore--end"))){//Portoflio Music Store end
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("MusicStorePortfolioLink");
-    updateURLbarToLocation("Portfolio-MusicStore");
-  } else if(elementIsVisibleInViewport(document.getElementById("Portfolio-ClassyCloset--end"))){//Portoflio CC end
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    SubCurrentDocumentLocation = document.getElementById("CCPortfolioLink");
-    updateURLbarToLocation("Portfolio-ClassyCloset");
-  } else if(elementIsVisibleInViewport(document.getElementById("Networks"))){//Networks
-    CurrentDocumentLocation = document.getElementById("NetworkLink");
-    updateURLbarToLocation("Networks");
-  } else if(elementIsVisibleInViewport(document.getElementById("portfolio--end"))){//Portoflio
-    CurrentDocumentLocation = document.getElementById("PortfolioLink");
-    updateURLbarToLocation("Portfolio");
-    SubCurrentDocumentLocation = "nulled";
+  const sections = [
+    { id: "Hometag", location: "Home", linkId: "HomeLink" },
+    { id: "About", location: "About", linkId: "AboutLink" },
+    { id: "footer", location: "Networks", linkId: "NetworkLink" },
+    { id: "Contact", location: "Contact", linkId: "ContactLink" },
+    { id: "Portfolio", location: "Portfolio", linkId: "PortfolioLink", sub: "nulled" },
+  
+    // Portfolio Projects
+    { id: "Portfolio-EIP", location: "Portfolio-EIP", linkId: "PortfolioLink", subLinkId: "EIPPortfolioLink" },
+    { id: "Portfolio-SQLL", location: "Portfolio-SQLL", linkId: "PortfolioLink", subLinkId: "SQLLPortfolioLink" },
+    { id: "Portfolio-HomeLab", location: "Portfolio-HomeLab", linkId: "PortfolioLink", subLinkId: "HomeLabPortfolioLink" },
+    { id: "Portfolio-MusicStore", location: "Portfolio-MusicStore", linkId: "PortfolioLink", subLinkId: "MusicStorePortfolioLink" },
+    { id: "Portfolio-WeatherPortal", location: "Portfolio-WeatherPortal", linkId: "PortfolioLink", subLinkId: "WeatherPortalPortfolioLink" },
+    { id: "Portfolio-ClassyCloset", location: "Portfolio-ClassyCloset", linkId: "PortfolioLink", subLinkId: "CCPortfolioLink" },
+    { id: "Portfolio-MAID", location: "Portfolio-MAID", linkId: "PortfolioLink", subLinkId: "MAIDPortfolioLink" },
+    { id: "Portfolio-ERD", location: "Portfolio-ERD", linkId: "PortfolioLink", subLinkId: "ERDPortfolioLink" },
+  
+    // Section ends
+    { id: "Portfolio-ERD--end", location: "Portfolio-ERD", linkId: "PortfolioLink", subLinkId: "ERDPortfolioLink" },
+    { id: "Portfolio-MAID--end", location: "Portfolio-MAID", linkId: "PortfolioLink", subLinkId: "MAIDPortfolioLink" },
+    { id: "Portfolio-WeatherPortal--end", location: "Portfolio-WeatherPortal", linkId: "PortfolioLink", subLinkId: "WeatherPortalPortfolioLink" },
+    { id: "Portfolio-MusicStore--end", location: "Portfolio-MusicStore", linkId: "PortfolioLink", subLinkId: "MusicStorePortfolioLink" },
+    { id: "Portfolio-ClassyCloset--end", location: "Portfolio-ClassyCloset", linkId: "PortfolioLink", subLinkId: "CCPortfolioLink" },
+    { id: "Portfolio-HomeLab--end", location: "Portfolio-HomeLab", linkId: "PortfolioLink", subLinkId: "HomeLabPortfolioLink" },
+    { id: "Portfolio-SQLL--end", location: "Portfolio-SQLL", linkId: "PortfolioLink", subLinkId: "SQLLPortfolioLink" },
+    { id: "Portfolio-EIP--end", location: "Portfolio-EIP", linkId: "PortfolioLink", subLinkId: "EIPPortfolioLink" },
+  
+    { id: "about--end", location: "About", linkId: "AboutLink" },
+    { id: "Networks", location: "Networks", linkId: "NetworkLink" },
+    { id: "portfolio--end", location: "Portfolio", linkId: "PortfolioLink", sub: "nulled" },
+  ];
+  
+  
+  for (const section of sections) {
+    const el = document.getElementById(section.id);
+    if (el && elementIsVisibleInViewport(el)) {
+      CurrentDocumentLocation = document.getElementById(section.linkId);
+      if (section.subLinkId) {
+        SubCurrentDocumentLocation = document.getElementById(section.subLinkId);
+      } else if (section.sub === "nulled") {
+        SubCurrentDocumentLocation = "nulled";
+      }
+      updateURLbarToLocation(section.location);
+      break; // stop at first visible section
+    }
   }
+  
 
   //Change highlighted area if different area
   if (CurrentDocumentLocation != LastDocumentLocation){
@@ -398,7 +378,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
 //Typing effect - on load
 
-const text = "An Aspiring Computer Information Systems Professional";
+const text = "Early-Career Information Technology Professional";
 const typingText = document.getElementById('typing-text');
 
 let index = 0;

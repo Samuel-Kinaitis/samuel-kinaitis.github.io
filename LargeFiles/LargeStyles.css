@@ -303,7 +303,7 @@ body{
   position: relative;
   
   border-radius: 0 0 25% 25%;
-  top: -300%;
+  top: -500%;
   justify-self: center;
   position: absolute;
 }
@@ -1153,6 +1153,20 @@ Introduction Section CSS
     -moz-text-fill-color: transparent;
   text-align: center;
   padding: 2rem 0;
+}
+
+.subjectDataheader{
+  font-size: 1.5rem;
+  background-color: var(--link);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  text-align: center;
+  margin: 0 0 2rem 0;
 }
 
 .ImageCenterItem{
